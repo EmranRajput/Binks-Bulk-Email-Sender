@@ -64,7 +64,7 @@
                     </nav>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('configuration') }}"  class="nav-link">
+                    <a href="{{ route('smtp.setting') }}"  class="nav-link">
                         <i class="typcn typcn-chart-bar-outline"></i> Configuration
                     </a>
 

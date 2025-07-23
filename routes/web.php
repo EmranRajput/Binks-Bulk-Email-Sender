@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\SmtpSetttingController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OneTimeSenderController;
@@ -23,6 +24,8 @@ Auth::routes();
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/one/time/sender', [HomeController::class, 'oneTiemSender'])->name('one.time.sender');
 Route::get('/saved/sender', [HomeController::class, 'savedSender'])->name('saved.sender');
-Route::get('configuration', [HomeController::class,'configuration'])->name('configuration');
+// Route::get('configuration', [HomeController::class,'configuration'])->name('configuration');
 
 Route::post('/one/time', [OneTimeSenderController::class, 'import'])->name('ots.import');
+ Route::get('Smtp-setting', [SmtpSetttingController::class,'SmtpSetting'])->name('smtp.setting');
+ Route::post('Smtp-setting', [SmtpSetttingController::class,'SmtpUpdate'])->name('smtp.update');

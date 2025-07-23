@@ -23,9 +23,9 @@
                         <label class="text-muted">TIME</label>
                         <h6 id="currentTime"></h6>
                     </div>
-                    <div>
+                    <div class="ml-4">
                         <label class="text-muted">DATE</label>
-                        <h6 id="currentDate"></h6>
+                        <h6 id="currentDate" class=""></h6>
                     </div>
                 </div>
             </div>

@@ -40,6 +40,6 @@ class HomeController extends Controller
         return view('saved-sender');
     }
     public function configuration(){
-        return view('configuration');
+        return view('smtp_configuration');
     }
 }

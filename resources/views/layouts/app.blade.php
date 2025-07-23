@@ -36,6 +36,7 @@
 
     @yield('content')
 
+    @include('notification.notification_alert')
 
     @include('layouts.footer')
     <script src="{{ asset('assets/lib/ionicons/ionicons.js') }}"></script>
