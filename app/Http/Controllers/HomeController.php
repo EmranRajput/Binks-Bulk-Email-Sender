@@ -39,4 +39,7 @@ class HomeController extends Controller
     public function savedSender(){
         return view('saved-sender');
     }
+    public function configuration(){
+        return view('configuration');
+    }
 }

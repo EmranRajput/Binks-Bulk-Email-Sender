@@ -41,10 +41,19 @@ class OneTimeSenderController extends Controller
                 'subject' => $request->subject,
                 'body' => $request->body,
             ];
-            $getEmailAddress = TempMailAddress::all('email');
-            foreach ($getEmailAddress as $value) {
-                SendEmailJob::dispatch($value->email, $mailData);
-            }
+           $total_send = 0;
+                $getEmailAddress = TempMailAddress::all('email');
+
+                foreach ($getEmailAddress as $value) {
+                    $email = trim($value->email);
+                    if (!empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                        SendEmailJob::dispatch($email, $mailData);
+                        $total_send++;
+                    } else {
+                        \Log::warning('Invalid email skipped: ' . $email);
+                    }
+                }
+
             TempMailAddress::truncate();
             return back()->with([
                 'message' => 'Success! Email Sent Succesfully. Total Sent: ' . $total_send,

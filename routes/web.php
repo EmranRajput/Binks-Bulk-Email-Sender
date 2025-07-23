@@ -23,6 +23,6 @@ Auth::routes();
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/one/time/sender', [HomeController::class, 'oneTiemSender'])->name('one.time.sender');
 Route::get('/saved/sender', [HomeController::class, 'savedSender'])->name('saved.sender');
-
+Route::get('configuration', [HomeController::class,'configuration'])->name('configuration');
 
 Route::post('/one/time', [OneTimeSenderController::class, 'import'])->name('ots.import');

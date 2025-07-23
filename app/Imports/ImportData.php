@@ -16,9 +16,14 @@ class ImportData implements ToModel, WithHeadingRow
      */
     public function model(array $row)
     {
-        return new TempMailAddress([
-            'email' => $row['email'],
-        ]);
+        if (!isset($row['email']) || empty($row['email'])) {
+        \Log::warning('Skipped row with missing email:', $row);
+        return null;
+    }
+
+    return new TempMailAddress([
+        'email' => trim($row['email']),
+    ]);
     }
 
 }

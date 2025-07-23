@@ -28,6 +28,10 @@ class SendEmailJob implements ShouldQueue
      */
     public function handle(): void
     {
+         if (!empty($this->email) && filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
         Mail::to($this->email)->send(new SendMail($this->mailData));
+    } else {
+        \Log::warning('Skipped invalid or empty email: ' . $this->email);
+    }
     }
 }
