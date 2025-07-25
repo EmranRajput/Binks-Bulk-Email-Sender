@@ -24,8 +24,7 @@ Bulk Email Sender is an open-source Laravel application designed to simplify the
 
 ### Step 1: Clone the Repository
 ```
-git clone https://github.com/arafat-web/bulk-email-sender.git
-cd bulk-email-sender
+git clone https://github.com/EmranRajput/Binks-Bulk-Email-Sender.git
 ```
 
 ### Step 2: Install Dependencies
@@ -82,7 +81,7 @@ Access the application in your browser at `http://localhost:8000`.
 ### 1. One Time Sender
 1. Login to the admin panel.
     ```
-    Email: admin@email.com
+    Email: admin@gmail.com
     Password: 12345678
     ```
 2. Navigate to the "One Time Sender" section.
@@ -96,16 +95,7 @@ Access the application in your browser at `http://localhost:8000`.
 <img src="./public/assets/img/demo/demo2.png" alt="Demo" width="33%" height="250px">
 <img src="./public/assets/img/demo/demo3.png" alt="Demo" width="33%" height="250px">
 
-## Contributing
-For any issues or inquiries, please open an issue on the [Issues](https://github.com/arafat-web/Bulk-Email-Sender/issues).<br/>
-If you can help me by contributing. Please don't hesitate to open a [Pull Request](https://github.com/arafat-web/Bulk-Email-Sender/pulls).<br/>
-🎉 **Thanks for reading!** 🌟  
 
 
 
 ### Contact Me
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:arafat.122260@gmail.com)
-[![Facbook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/arafathossain000)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arafat-hossain-ar-a174b51a6/)
-[![Sololearn](https://img.shields.io/badge/-Sololearn-3a464b?style=for-the-badge&logo=Sololearn&logoColor=white)](https://www.sololearn.com/profile/4703319)
-[![Website](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://arafatdev.com)
